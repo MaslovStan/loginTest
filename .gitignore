@@ -1,0 +1,9 @@
+node_modules
+.idea
+.idea/*
+allure-results
+allure-report
+cypress/videos/loginNegative.spec.js.mp4
+cypress/videos/loginPossitive.spec.js.mp4
+cypress/videos/loginRegression.spec.js.mp4
+cypress/videos/loginWithDataOnPage.spec.js.mp4

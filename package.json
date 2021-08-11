@@ -1,0 +1,37 @@
+{
+  "name": "login_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:allSpecs": "cypress run --spec \"cypress/integration/**\" --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
+    "test:allure": "npm run cy:allSpecs && npm run report:allure",
+    "cy:run": "cypress run",
+    "cy:verify": "cypress verify",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "allure-commandline": "^2.13.8",
+    "cypress": "^8.2.0",
+    "mocha": "^9.0.0",
+    "mocha-allure-reporter": "^1.4.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaslovStan/loginTest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaslovStan/loginTest/issues"
+  },
+  "homepage": "https://github.com/MaslovStan/loginTest#readme"
+}
